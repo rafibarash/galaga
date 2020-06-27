@@ -31,6 +31,8 @@ export default class Intro extends AbstractLevel {
   }
 
   init = () => {
+    const loadingDiv = document.getElementById('loading');
+    loadingDiv.style.display = 'none';
     this.addText();
     this.addStarTunnel();
     this.addEventListeners();
